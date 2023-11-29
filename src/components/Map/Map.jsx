@@ -203,7 +203,9 @@ export default function GoogleMapComponent() {
     userToPointA = calculateDistance(userLocation, pointA);
   }
 
-  calculatedMarkerToMarkerDistance = calculatedMarkerToMarkerDistance.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  if (Array.isArray(calculatedMarkerToMarkerDistance)) {
+    calculatedMarkerToMarkerDistance = calculatedMarkerToMarkerDistance.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  }
 
   return (
     <div className='map-container'>
