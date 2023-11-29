@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import './App.sass';
+import GoogleMapComponent from './components/Map/Map';
+import Cargo from './components/cargo/cargo';
+import ContactInfo from './components/contactInfo/contactInfo';
+import Layout from './components/layout/layout';
+import Payment from './components/payment/Payment';
+import RouteSection from './components/routeCard/renderCards';
+import store from './store/store';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Layout>
+          <main>
+            <h1>Замовити</h1>
+            <GoogleMapComponent />
+            <RouteSection />
+            <Cargo />
+            <ContactInfo />
+            <Payment />
+          </main>
+        </Layout>
+      </div>
+    </Provider>
   );
 }
 

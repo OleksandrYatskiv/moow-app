@@ -1,0 +1,56 @@
+.payment-title
+  color: #665CD1
+  text-align: left
+  font-weight: 700px
+
+.payment-input-wrap
+  display: flex
+  flex-direction: column
+
+.payment-input
+  appearance: none
+  -webkit-appearance: none
+  width: 18px
+  height: 18px
+  border-radius: 50%
+  border: 1px solid #C4C4C4
+  &:checked
+    background-color: #665CD1
+
+.radio-wrapp
+  display: flex
+  align-items: center
+  width: 630px
+  height: 45px
+  background-color: #F1F0FF
+  margin: 20px 0
+  border-radius: 10px
+
+.payment-text
+  font-weight: 700
+  color: #171717
+  size: 16px
+  margin-left: 20px
+
+.payment-choise
+  margin-left: 200px
+  font-weight: 300
+  color: #665CD1
+  size: 14px
+
+.payment-container
+  margin-bottom: 50px 
+
+@media (max-width: 600px)
+  .payment-container
+    max-width: 300px
+    margin: auto
+
+  .radio-wrapp 
+    max-width: 300px
+
+  .payment-text
+    font-size: 14px
+
+  .payment-choise
+    display: none

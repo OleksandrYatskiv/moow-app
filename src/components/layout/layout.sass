@@ -1,0 +1,127 @@
+nav
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+.search
+  width: 400px
+  height: 30px
+  border-radius: 6px
+  padding: 4px 10px
+  border: 1.5px solid #C4C4C4
+  background-image: url('../../images/magnifying-glass-solid.svg')
+  background-repeat: no-repeat
+  background-position: right 10px center
+  background-size: 16px
+
+.categories
+  background-color: #F1F0FF
+  width: 104px
+  height: 40px
+  border-radius: 35px
+  color: purple
+  border: none
+  cursor: pointer
+
+.create-btn
+  background-color: #171717
+  width: 208px
+  height: 40px
+  border-radius: 35px
+  color: white
+  border: none
+  cursor: pointer
+
+.icons-wrapper
+  width: 278px
+  display: flex
+  justify-content: space-between
+
+.lan-toggler
+  cursor: pointer
+  display: flex
+  align-items: center
+  span
+    margin-right: 10px
+    font-weight: 700
+
+.footer-logo
+  display: flex
+  align-items: flex-start
+  margin-bottom: 10px
+
+footer
+  margin-top: auto
+
+.links-container
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+.footer-links
+  display: flex
+  flex-direction: column
+
+  img
+    width: 20px
+  .links-wrapper
+    margin: 15px
+    a
+      text-decoration: none
+      color: #5A5A5A
+      align-self: flex-start
+    img
+      margin-right: 10px
+  div
+    display: flex
+    align-items: center
+    span
+      margin-left: 10px
+
+.footer-copyright
+  color: #7E7E7E
+  text-align: center
+  font-weight: 700
+  margin-top: 50px
+
+.social-media
+  display: flex
+  justify-content: center
+  margin-top: 10px
+  a
+    img
+      margin-right: 10px
+      width: 20px
+
+.get-app-container
+  display: flex
+  flex-direction: column
+  p
+    color: #262626
+    font-weight: 700
+    margin: 0
+    margin-bottom: 10px
+
+.burger-wrap
+  display: none
+
+@media (max-width: 600px)
+  .icons-wrapper
+    display: none
+
+  .create-btn
+    display: none
+
+  .search
+    display: none
+
+  .categories
+    display: none
+
+  .burger-wrap
+    display: flex
+    cursor: pointer
+
+  footer
+    display: none
